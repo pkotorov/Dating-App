@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "303ETVeMfV0lfBLQ9VNPckwOi4YeIo4j3kuvcwySPd7hroLVqst/m3WOrxQbtfxDot9IJOJ7mTZKC/WKzJnZ8w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\petar\\Desktop\\Dating App\\DatingApp.Common\\DatingApp.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\petar\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.205\\stylecop.analyzers.1.2.0-beta.205.nupkg.sha512",
+    "C:\\Users\\petar\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.205\\stylecop.analyzers.unstable.1.2.0.205.nupkg.sha512"
+  ],
+  "logs": []
+}
