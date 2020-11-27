@@ -3,7 +3,13 @@
     this.ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to @GlobalConstants.SystemName!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <div style='text-align: center;'>
+        <h1>Find your soulmate in just a few clicks.</h1>
+        <p class="lead">All you need to do is sign up!</p>
+        <div class="text-center">
+            <a class="btn btn-primary btn-lg mr-2" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-info btn-lg">Login</a>
+        </div>
+    </div>
 </div>

@@ -12,8 +12,8 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("DatingApp.Data", "C:\\Users\\petar\\Desktop\\Dating App\\Data\\DatingApp.Data", "DatingApp.Data.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("DatingApp.Web", "C:\\Users\\petar\\Desktop\\Dating App\\Web\\DatingApp.Web", "DatingApp.Web.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("DatingApp.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\petar\\Desktop\\Dating App\\Data\\DatingApp.Data", "DatingApp.Data.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("DatingApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\petar\\Desktop\\Dating App\\Web\\DatingApp.Web", "DatingApp.Web.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DatingApp.Web.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
