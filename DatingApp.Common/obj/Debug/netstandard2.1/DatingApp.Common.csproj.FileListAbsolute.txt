@@ -1,0 +1,9 @@
+C:\Users\petar\Desktop\Dating App\DatingApp.Common\bin\Debug\netstandard2.1\DatingApp.Common.deps.json
+C:\Users\petar\Desktop\Dating App\DatingApp.Common\bin\Debug\netstandard2.1\DatingApp.Common.dll
+C:\Users\petar\Desktop\Dating App\DatingApp.Common\bin\Debug\netstandard2.1\DatingApp.Common.pdb
+C:\Users\petar\Desktop\Dating App\DatingApp.Common\obj\Debug\netstandard2.1\DatingApp.Common.csprojAssemblyReference.cache
+C:\Users\petar\Desktop\Dating App\DatingApp.Common\obj\Debug\netstandard2.1\DatingApp.Common.AssemblyInfoInputs.cache
+C:\Users\petar\Desktop\Dating App\DatingApp.Common\obj\Debug\netstandard2.1\DatingApp.Common.AssemblyInfo.cs
+C:\Users\petar\Desktop\Dating App\DatingApp.Common\obj\Debug\netstandard2.1\DatingApp.Common.csproj.CoreCompileInputs.cache
+C:\Users\petar\Desktop\Dating App\DatingApp.Common\obj\Debug\netstandard2.1\DatingApp.Common.dll
+C:\Users\petar\Desktop\Dating App\DatingApp.Common\obj\Debug\netstandard2.1\DatingApp.Common.pdb

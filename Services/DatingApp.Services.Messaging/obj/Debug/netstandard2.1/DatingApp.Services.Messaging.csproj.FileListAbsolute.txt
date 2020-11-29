@@ -1,0 +1,9 @@
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Messaging\bin\Debug\netstandard2.1\DatingApp.Services.Messaging.deps.json
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Messaging\bin\Debug\netstandard2.1\DatingApp.Services.Messaging.dll
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Messaging\bin\Debug\netstandard2.1\DatingApp.Services.Messaging.pdb
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Messaging\obj\Debug\netstandard2.1\DatingApp.Services.Messaging.csprojAssemblyReference.cache
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Messaging\obj\Debug\netstandard2.1\DatingApp.Services.Messaging.AssemblyInfoInputs.cache
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Messaging\obj\Debug\netstandard2.1\DatingApp.Services.Messaging.AssemblyInfo.cs
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Messaging\obj\Debug\netstandard2.1\DatingApp.Services.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Messaging\obj\Debug\netstandard2.1\DatingApp.Services.Messaging.dll
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Messaging\obj\Debug\netstandard2.1\DatingApp.Services.Messaging.pdb

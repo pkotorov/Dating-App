@@ -1,0 +1,16 @@
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\bin\Debug\netstandard2.1\DatingApp.Services.Data.deps.json
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\bin\Debug\netstandard2.1\DatingApp.Services.Data.dll
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\bin\Debug\netstandard2.1\DatingApp.Services.Data.pdb
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\bin\Debug\netstandard2.1\DatingApp.Data.Common.dll
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\bin\Debug\netstandard2.1\DatingApp.Data.Models.dll
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\bin\Debug\netstandard2.1\DatingApp.Services.Mapping.dll
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\bin\Debug\netstandard2.1\DatingApp.Data.Common.pdb
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\bin\Debug\netstandard2.1\DatingApp.Data.Models.pdb
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\bin\Debug\netstandard2.1\DatingApp.Services.Mapping.pdb
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\obj\Debug\netstandard2.1\DatingApp.Services.Data.csprojAssemblyReference.cache
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\obj\Debug\netstandard2.1\DatingApp.Services.Data.AssemblyInfoInputs.cache
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\obj\Debug\netstandard2.1\DatingApp.Services.Data.AssemblyInfo.cs
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\obj\Debug\netstandard2.1\DatingApp.Services.Data.csproj.CoreCompileInputs.cache
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\obj\Debug\netstandard2.1\DatingApp.Services.Data.csproj.CopyComplete
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\obj\Debug\netstandard2.1\DatingApp.Services.Data.dll
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Data\obj\Debug\netstandard2.1\DatingApp.Services.Data.pdb

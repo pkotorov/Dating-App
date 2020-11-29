@@ -1,0 +1,9 @@
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Mapping\bin\Debug\netstandard2.1\DatingApp.Services.Mapping.deps.json
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Mapping\bin\Debug\netstandard2.1\DatingApp.Services.Mapping.dll
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Mapping\bin\Debug\netstandard2.1\DatingApp.Services.Mapping.pdb
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Mapping\obj\Debug\netstandard2.1\DatingApp.Services.Mapping.csprojAssemblyReference.cache
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Mapping\obj\Debug\netstandard2.1\DatingApp.Services.Mapping.AssemblyInfoInputs.cache
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Mapping\obj\Debug\netstandard2.1\DatingApp.Services.Mapping.AssemblyInfo.cs
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Mapping\obj\Debug\netstandard2.1\DatingApp.Services.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Mapping\obj\Debug\netstandard2.1\DatingApp.Services.Mapping.dll
+C:\Users\petar\Desktop\Dating App\Services\DatingApp.Services.Mapping\obj\Debug\netstandard2.1\DatingApp.Services.Mapping.pdb
