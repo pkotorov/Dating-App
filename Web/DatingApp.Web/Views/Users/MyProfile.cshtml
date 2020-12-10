@@ -1,0 +1,131 @@
+﻿@model UserViewModel
+
+<div class="row">
+    <div class="col-4">
+        <h1>Your profile</h1>
+    </div>
+    <div class="col-8">
+        <div class="alert alert-info">
+            <strong>Information: </strong>Any unsaved changes will be lost
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <img src="@Model.PhotoUrl" alt="@Model.Allias"
+                 class="card-img-top img-thumbnail">
+            <div class="card-body">
+                <div>
+                    <strong>Location:</strong>
+                    <p>@Model.City, @Model.Country</p>
+                </div>
+                <div>
+                    <strong>Age:</strong>
+                    <p>@Model.Age</p>
+                </div>
+                <div>
+                    <strong>Last Active:</strong>
+                    <p>@Model.LastActive</p>
+                </div>
+                <div>
+                    <strong>Member since:</strong>
+                    <p>@Model.CreatedOn</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button form="editForm" type="submit" class="btn btn-success btn-block">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8">
+        <tabset class="member-tabset">
+            <tab heading='About @Model.Allias'>
+                <form #editForm="ngForm" id="editForm">
+                    <h4>Description</h4>
+                    <textarea class="form-control" name="introduction" rows="6"></textarea>
+                    <h4 class="mt-2">Looking for</h4>
+                    <textarea class="form-control" name="lookingFor" rows="6"></textarea>
+                    <h4 class="mt-2">Interests</h4>
+                    <textarea class="form-control" name="interests" rows="6"></textarea>
+                    <h4 class="mt-2">Location Details: </h4>
+                    <div class="form-inline">
+                        <label for="city">City: </label>
+                        <input type="text" name="city" class="form-control mx-2">
+                        <label for="city">Country: </label>
+                        <input type="text" name="country" class="form-control mx-2">
+                    </div>
+                </form>
+
+            </tab>
+            <tab heading='Edit Photos'>
+                <div class="row">
+                    @foreach (var photo in Model.Photos)
+                    {
+                        <div class="col-2">
+                            <img src="@photo.Url" alt="@photo.Url" class="img-thumbnail p-1">
+                            <div class="text-center">
+                                <button [disabled]="@photo.IsMain"
+                                        (click)="setMainPhoto(photo)"
+                                        class="@(photo.IsMain ? "btn-success active" : "btn-outline-success") btn btn-sm">
+                                    Main
+                                </button>
+                                <button [disabled]="@photo.IsMain"
+                                        (click)="deletePhoto(photo.id)"
+                                        class="btn btn-sm btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3">
+
+                        <h3>Add Photos</h3>
+
+                        Multiple
+                        <input type="file" multiple /><br />
+
+                        Single
+                        <input type="file" />
+                    </div>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th width="50%">Name</th>
+                                <th>Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of uploader.queue">
+                                <td><strong>{{ item?.file?.name }}</strong></td>
+                                <td *ngIf="uploader.options.isHTML5" nowrap>{{ item?.file?.size/1024/1024 | number:'.2' }} MB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div>
+                        <button type="button" class="btn btn-success btn-s"
+                                (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+                            <span class="fa fa-upload"></span> Upload all
+                        </button>
+                        <button type="button" class="btn btn-warning btn-s"
+                                (click)="uploader.cancelAll()" [disabled]="!uploader.isUploading">
+                            <span class="fa fa-ban"></span> Cancel all
+                        </button>
+                        <button type="button" class="btn btn-danger btn-s"
+                                (click)="uploader.clearQueue()" [disabled]="!uploader.queue.length">
+                            <span class="fa fa-trash"></span> Remove all
+                        </button>
+                    </div>
+
+                </div>
+
+            </tab>
+        </tabset>
+    </div>
+</div>
+

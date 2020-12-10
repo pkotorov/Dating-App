@@ -463,3 +463,5 @@ C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web\obj\Debug\netcoreapp3.1\Razo
 C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web\bin\Debug\netcoreapp3.1\wwwroot\users\UserSeedData.json
 C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web\obj\Debug\netcoreapp3.1\Razor\Views\Users\All.cshtml.g.cs
+C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web\obj\Debug\netcoreapp3.1\Razor\Views\Users\ById.cshtml.g.cs
+C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web\obj\Debug\netcoreapp3.1\Razor\Views\Users\MyProfile.cshtml.g.cs

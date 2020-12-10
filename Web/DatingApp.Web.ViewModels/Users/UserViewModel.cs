@@ -10,7 +10,7 @@
     using DatingApp.Services.Mapping;
     using DatingApp.Web.ViewModels.Photos;
 
-    public class AllUsersViewModel : IMapFrom<ApplicationUser>, IHaveCustomMappings
+    public class UserViewModel : IMapFrom<ApplicationUser>, IHaveCustomMappings
     {
         public string Id { get; set; }
 
@@ -42,7 +42,7 @@
 
         public void CreateMappings(IProfileExpression configuration)
         {
-            configuration.CreateMap<ApplicationUser, AllUsersViewModel>()
+            configuration.CreateMap<ApplicationUser, UserViewModel>()
                 .ForMember(x => x.PhotoUrl, opt => opt.MapFrom(x => x.Photos
                     .FirstOrDefault(x => x.IsMain).Url));
         }
