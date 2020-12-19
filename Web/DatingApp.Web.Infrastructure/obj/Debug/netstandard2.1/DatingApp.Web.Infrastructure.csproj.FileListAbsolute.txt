@@ -1,9 +1,0 @@
-C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web.Infrastructure\bin\Debug\netstandard2.1\DatingApp.Web.Infrastructure.deps.json
-C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web.Infrastructure\bin\Debug\netstandard2.1\DatingApp.Web.Infrastructure.dll
-C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web.Infrastructure\bin\Debug\netstandard2.1\DatingApp.Web.Infrastructure.pdb
-C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web.Infrastructure\obj\Debug\netstandard2.1\DatingApp.Web.Infrastructure.csprojAssemblyReference.cache
-C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web.Infrastructure\obj\Debug\netstandard2.1\DatingApp.Web.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web.Infrastructure\obj\Debug\netstandard2.1\DatingApp.Web.Infrastructure.AssemblyInfo.cs
-C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web.Infrastructure\obj\Debug\netstandard2.1\DatingApp.Web.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web.Infrastructure\obj\Debug\netstandard2.1\DatingApp.Web.Infrastructure.dll
-C:\Users\petar\Desktop\Dating App\Web\DatingApp.Web.Infrastructure\obj\Debug\netstandard2.1\DatingApp.Web.Infrastructure.pdb
