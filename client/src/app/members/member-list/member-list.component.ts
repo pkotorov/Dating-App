@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Member } from 'src/app/_models/member';
 import { Pagination } from 'src/app/_models/pagination';
 import { MembersService } from 'src/app/_services/members.service';
@@ -28,4 +27,10 @@ export class MemberListComponent implements OnInit {
     })
   }
 
+  pageChanged(event: any): void {
+    if (this.pagination.currentPage !== event.page) {
+      this.pageNumber = event.page;
+      this.loadMembers();
+    }
+  }
 }
