@@ -22,7 +22,7 @@ namespace API.Controllers
 
         public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenService tokenService, IMapper mapper)
         {
-            signInManager = signInManager;
+            _signInManager = signInManager;
             _userManager = userManager;
             _tokenService = tokenService;
             _mapper = mapper;
