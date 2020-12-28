@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API.Helpers;
-using Microsoft.AspNetCore.Mvc;
 
 namespace API.SignalR
 {
@@ -35,7 +33,10 @@ namespace API.SignalR
             bool isOffline = false;
             lock (OnlineUsers)
             {
-                if (!OnlineUsers.ContainsKey(username)) return Task.FromResult(isOffline);
+                if (!OnlineUsers.ContainsKey(username))
+                {
+                    return Task.FromResult(isOffline);
+                }
 
                 OnlineUsers[username].Remove(connectionId);
                 if (OnlineUsers[username].Count == 0)

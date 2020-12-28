@@ -4,16 +4,13 @@ using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace API.Services
 {
     public class PhotoService : IPhotoService
     {
-        private readonly Cloudinary _cloudinary;
+        private readonly Cloudinary cloudinary;
 
         public PhotoService(IOptions<CloudinarySettings> config)
         {
@@ -24,7 +21,7 @@ namespace API.Services
                 config.Value.ApiSecret
             );
 
-            _cloudinary = new Cloudinary(acc);
+            this.cloudinary = new Cloudinary(acc);
         }
 
         public async Task<ImageUploadResult> AddPhotoAsync(IFormFile file)
@@ -44,7 +41,7 @@ namespace API.Services
                         .Gravity("face")
                 };
 
-                uploadResult = await _cloudinary.UploadAsync(uploadParams);
+                uploadResult = await this.cloudinary.UploadAsync(uploadParams);
             }
 
             return uploadResult;
@@ -54,7 +51,7 @@ namespace API.Services
         {
             var deleteParams = new DeletionParams(publicId);
 
-            var result = await _cloudinary.DestroyAsync(deleteParams);
+            var result = await this.cloudinary.DestroyAsync(deleteParams);
 
             return result;
         }

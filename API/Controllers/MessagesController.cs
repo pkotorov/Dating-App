@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using API.DTOs;
-using API.Entities;
 using API.Extensions;
 using API.Helpers;
 using API.Interfaces;
@@ -14,15 +13,18 @@ namespace API.Controllers
     [Authorize]
     public class MessagesController : BaseApiController
     {
-        private readonly IUserRepository _userRepository;
-        private readonly IMessageRepository _messageRepository;
-        private readonly IMapper _mapper;
-        public MessagesController(IUserRepository userRepository, IMessageRepository messageRepository,
+        private readonly IUserService userService;
+
+        private readonly IMessageService messageService;
+
+        private readonly IMapper mapper;
+
+        public MessagesController(IUserService userService, IMessageService messageService,
             IMapper mapper)
         {
-            _mapper = mapper;
-            _messageRepository = messageRepository;
-            _userRepository = userRepository;
+            this.mapper = mapper;
+            this.messageService = messageService;
+            this.userService = userService;
         }
 
         [HttpGet]
@@ -31,7 +33,7 @@ namespace API.Controllers
         {
             messageParams.Username = User.GetUserName();
 
-            var messages = await _messageRepository.GetMessagesForUser(messageParams);
+            var messages = await this.messageService.GetMessagesForUser(messageParams);
 
             Response.AddPaginationHeader(messages.CurrentPage, messages.PageSize,
                 messages.TotalCount, messages.TotalPages);
@@ -44,7 +46,7 @@ namespace API.Controllers
         {
             var currentUsername = User.GetUserName();
 
-            return Ok(await _messageRepository.GetMessageThread(currentUsername, username));
+            return this.Ok(await this.messageService.GetMessageThread(currentUsername, username));
         }
 
         [HttpDelete("{id}")]
@@ -52,21 +54,34 @@ namespace API.Controllers
         {
             var username = User.GetUserName();
 
-            var message = await _messageRepository.GetMessage(id);
+            var message = await this.messageService.GetMessage(id);
 
             if (message.Sender.UserName != username && message.Recipient.UserName != username)
-                return Unauthorized();
+            {
+                return this.Unauthorized();
+            }
 
-            if (message.Sender.UserName == username) message.SenderDeleted = true;
+            if (message.Sender.UserName == username)
+            {
+                message.SenderDeleted = true;
+            }
 
-            if (message.Recipient.UserName == username) message.RecipientDeleted = true;
+            if (message.Recipient.UserName == username)
+            {
+                message.RecipientDeleted = true;
+            }
 
             if (message.SenderDeleted && message.RecipientDeleted)
-                _messageRepository.DeleteMessage(message);
+            { 
+                this.messageService.DeleteMessage(message);
+            }
 
-            if (await _messageRepository.SaveAllAsync()) return Ok();
+            if (await this.messageService.SaveAllAsync())
+            {
+                return this.Ok();
+            }
 
-            return BadRequest("Problem deleting the message");
+            return this.BadRequest("Problem deleting the message");
         }
     }
 }

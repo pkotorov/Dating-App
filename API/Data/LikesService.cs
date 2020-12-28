@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using API.DTOs;
 using API.Entities;
@@ -10,23 +9,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Data
 {
-    public class LikesRepository : ILikesRepository
+    public class LikesService : ILikesService
     {
-        private readonly DataContext _context;
-        public LikesRepository(DataContext context)
+        private readonly DataContext context;
+
+        public LikesService(DataContext context)
         {
-            _context = context;
+            this.context = context;
         }
 
         public async Task<UserLike> GetUserLike(int sourceUserId, int likedUserId)
         {
-            return await _context.Likes.FindAsync(sourceUserId, likedUserId);
+            return await this.context.Likes.FindAsync(sourceUserId, likedUserId);
         }
 
         public async Task<PagedList<LikeDto>> GetUserLikes(LikesParams likesParams)
         {
-            var users = _context.Users.OrderBy(u => u.UserName).AsQueryable();
-            var likes = _context.Likes.AsQueryable();
+            var users = this.context.Users.OrderBy(u => u.UserName).AsQueryable();
+            var likes = this.context.Likes.AsQueryable();
 
             if (likesParams.Predicate == "liked")
             {
@@ -56,7 +56,7 @@ namespace API.Data
 
         public async Task<AppUser> GetUserWithLikes(int userId)
         {
-            return await _context.Users
+            return await this.context.Users
                 .Include(x => x.LikedUsers)
                 .FirstOrDefaultAsync(x => x.Id == userId);
         }
